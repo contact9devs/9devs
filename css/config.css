@@ -73,13 +73,13 @@ body {
 
 #footer {
   width: 100%;
-  height: 496px;
+  height: 396px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   color: #4A5568;
-
+  border-top: 0.1em solid #4A5568;
 }
 
 /* ------------------------ */
@@ -96,28 +96,55 @@ body {
 }
 
 .footer_part1 .logo {
-  width:78px;
+  width: 78px;
 }
+
 /* ---------- */
-.footer_part2{
+.footer_part2 {
   width: 15%;
   height: 100%;
   padding: 1% 2% 0;
 }
-.footer_part2 ul, .footer_part3{
+
+.footer_part2 ul,
+.footer_part3, 
+.footer_part3 div {
   height: 45%;
-  margin-top: 10%;
+  margin-top:4%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
+
 /* --------- */
-.footer_part3{
-  align-content: center;
+.footer_part3 {
+  height: 100%;
+  justify-content: unset;
   margin-top: 0;
   width: 25%;
+  align-content: center;
   padding: 1% 2% 0;
 }
+
+.tel::before,
+.email::before,
+.location::before {
+  vertical-align: middle;
+  margin-right: 2%;
+}
+
+.tel::before {
+  content: url("../assets/logo/phone-rounded-svgrepo-com.svg");
+}
+
+.email::before {
+  content: url("../assets/logo/mail-svgrepo-com.svg");
+}
+
+.location::before {
+  content: url("../assets/logo/location-pin-svgrepo-com.svg");
+}
+
 /* --------------------------- */
 .footer_part4 {
   position: relative;
@@ -135,7 +162,6 @@ body {
 
 /* --------- */
 .section_copyright {
-
   border-top: 0.1em solid #4A5568;
   width: 100%;
   height: 5em;
