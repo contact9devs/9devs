@@ -23,51 +23,57 @@
       <li><a href="blog.html">Blog</a></li>
       <li class="switch bouton_contact">Dark Mode </li>
     </ul>
-    <a href="pages/contactUs.html" class="bouton_contact">Contactez-nous</a>
+    <a href="contactUs.html" class="bouton_contact">Contactez-nous</a>
   </nav>
   <!-- debut du corps -->
   <main id="main">
     <div class="top">
       <h2>Get in touch</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis dignissimos impedit aperiam harum corporis
-        similique, aspernatur adipisci natus facere quas voluptates ad distinctio accusamus, consequatur eveniet sequi
-        omnis molestiae perspiciatis.</p>
+      <p>Please feel free to get in touch with us via any convenient means (phone, whatsapp, email, submit a contact
+        form). We will be glad to answer your questions as soon as possible.</p>
     </div>
     <div class="form">
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.8202864337527!2d-4.001034685736035!3d5.290719337733236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1e95a7230b815%3A0xb42441cd6ea4939c!2sECOLE%20SUP%C3%89RIEURE%20AFRICAINE%20DES%20TIC%20(%20ESATIC)!5e0!3m2!1sfr!2sci!4v1637317457669!5m2!1sfr!2sci"
-          width="600" height="450" style="border: 0px; pointer-events: none;" allowfullscreen=""
-          loading="lazy"></iframe>
-      </div>
       <form action="#">
+        <img src="../assets/logo/commande.svg"  alt="">
+       <div class="form-right">
         <h2>Connect With Your Next Great Hire Today !</h2>
         <div class="champs">
-
+          <label for="company">Compagnie</label>
+          <input type="text" name="company" id="company" placeholder="Ma Companie">
+          <label for="name">Nom</label>
+          <input type="text" name="name" id="name" placeholder="Nom" required>
+          <label for="tel">Téléphone</label>
+          <input type="tel" name="tel" id="tel" placeholder="+225 00000000" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="exemple@site.com" required>
+          <label for="description">Description du Projet</label>
+          <textarea name="description" id="description" cols="30" rows="10" placeholder="Je veux ..."></textarea>
+          <button type="submit"></button>
         </div>
+       </div>
       </form>
     </div>
     <div class="informations">
       <div class="card">
         <img src="#" alt="" class="photo_de_profil">
-        <p class="form-name"></p>
-        <p class="role"></p>
-        <p class="form-email"></p>
-        <p class="form-tel"></p>
+        <p class="form-name">Kane Alassane</p>
+        <p class="role">Expert CyberSécurité</p>
+        <p class="form-email">kanes@gmail.com</p>
+        <p class="form-tel">+225 0825456598</p>
       </div>
       <div class="card">
         <img src="#" alt="" class="photo_de_profil">
-        <p class="form-name"></p>
-        <p class="role"></p>
-        <p class="form-email"></p>
-        <p class="form-tel"></p>
+        <p class="form-name">Sebe Idriss</p>
+        <p class="role">Human Ressources</p>
+        <p class="form-email">sebe@gmail.com</p>
+        <p class="form-tel">+225 0574738331</p>
       </div>
       <div class="card">
         <img src="#" alt="" class="photo_de_profil">
-        <p class="form-name"></p>
-        <p class="role"></p>
-        <p class="form-email"></p>
-        <p class="form-tel"></p>
+        <p class="form-name">Dagbo Kady</p>
+        <p class="role">Fondateur/CEO</p>
+        <p class="form-email">dagbokady@gmail.com</p>
+        <p class="form-tel">+225 0171007643</p>
       </div>
     </div>
   </main>
