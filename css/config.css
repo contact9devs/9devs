@@ -19,36 +19,37 @@
   font-weight: normal;
   src: local('Inspiration Regular'), url('../fonts/Inspiration-Regular.woff') format('woff');
 }
+
 @font-face {
   font-family: 'Nunito-Regular';
   src: url('../fonts/Nunito-Regular.woff2') format('woff2'),
-       url('../fonts/Nunito-Regular.woff') format('woff'),
-       url('../fonts/Nunito-Regular.ttf') format('truetype');
-       font-weight: 400;
-       font-display: swap;
-       font-style: normal;
+    url('../fonts/Nunito-Regular.woff') format('woff'),
+    url('../fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
 
 body {
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background: url("../assets/logo/bulles.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  
+
 }
 
 /* code css pour la nav-bar et le footer */
 #nav {
-  width: 100%;
-  height: 79px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
+  height: 79px;
   background-color: var(--background);
   box-shadow:
     0px 4px 40px -23px rgba(0, 0, 0, 0.15);
@@ -56,11 +57,10 @@ body {
 
 /* ------------------------------- */
 .logo {
+  text-align: center;
   font-family: 'Inspiration Regular';
   font-size: 2rem;
   color: var(--text-color);
-  text-align: center;
-  width: 8%;
 }
 
 .logo::before {
@@ -85,24 +85,23 @@ body {
 /* --------------------------- */
 .bouton_contact {
   padding: 0.9% 1%;
-  background: linear-gradient(225deg, #6675F7 0%, #57007B 100%);
   border-radius: 5px;
   font-weight: 600;
   font-size: 14px;
   color: var(--button-text-color);
+  background: linear-gradient(225deg, #6675F7 0%, #57007B 100%);
 }
 
 /* section footer */
 
 #footer {
-  width: 100%;
-  height: 450px;
   display: flex;
-  font-size: 0.9rem;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--background);
+  width: 100%;
+  height: 500px;
+  font-size: 0.9rem;
   color: var(--text-color);
 }
 
@@ -112,18 +111,18 @@ body {
 
 /* -------------------- */
 .top_footer {
-  width: 75%;
-  height:6em;
-  background: linear-gradient(225deg, #F1F1F5 0%, #E4ECF7 100%);
-  border-radius: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 75%;
+  height: 6em;
+  margin-bottom: 3%;
+  border-radius: 20px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
-  margin-bottom: 3%;
+  background: linear-gradient(225deg, #F1F1F5 0%, #E4ECF7 100%);
 }
 
 .join {
@@ -132,19 +131,22 @@ body {
   align-items: center;
   height: 100%;
 }
-.top_footer{
+
+.top_footer {
   padding: 1em 2em;
 }
-.join img{
+
+.join img {
   width: 100%;
   height: 33%;
 }
+
 #footer .join a {
+  width: auto;
+  height: auto;
   padding: 10% 33%;
   border-radius: 5px;
   font-size: 17px;
-  width: auto;
-  height: auto;
   color: var(--button-text-color);
   background: linear-gradient(225deg, #FFC656 0%, #F16063 100%);
 }
@@ -152,8 +154,9 @@ body {
 /* ------------------------ */
 .big_footer {
   display: flex;
-  height:70%;
+  height: 70%;
   color: inherit;
+  background-color: var(--background);
 }
 
 /* --------------------- */
@@ -163,7 +166,7 @@ body {
 }
 
 .footer_part1 .logo {
-  width: 78px;
+  width: 86px;
 }
 
 /* ---------- */
@@ -176,20 +179,20 @@ body {
 .footer_part2 ul,
 .footer_part3,
 .footer_part3 div {
-  height: 65%;
-  margin-top: 4%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  height: 65%;
+  margin-top: 4%;
 }
 
 /* --------- */
 .footer_part3 {
-  height: 100%;
   justify-content: unset;
-  margin-top: 0;
-  width: 25%;
   align-content: center;
+  width: 25%;
+  height: 100%;
+  margin-top: 0;
   padding: 1% 2% 0;
   color: inherit;
 }
@@ -217,7 +220,7 @@ body {
 /* --------------------------- */
 .footer_part4 {
   position: relative;
-  width: 20%;
+  width: 30%;
   height: 100%;
   margin-left: 16%;
   padding: 1% 2% 0;
@@ -231,11 +234,12 @@ body {
 
 /* --------- */
 .section_copyright {
-  border-top: 0.1em solid var(--text-color);
   width: 100%;
   height: 5em;
-  text-align: center;
+  border-top: 0.1em solid var(--text-color);
   padding: 2% 0;
+  text-align: center;
   color: var(--text-color);
   font-weight: 400;
+  background-color: var(--background);
 }
