@@ -39,9 +39,7 @@
     </div>
     <div class="form">
       <img src="../assets/logo/commande.svg" alt="">
-      <form action="#">
-
-
+      <form action="#" method="post" id="formulaire">
         <h2>Votre Projet Commence ici !</h2>
         <div class="champs">
           <div class="half">
@@ -62,8 +60,13 @@
           </div>
           <div class="fullwidth">
             <label for="description">Description du Projet</label>
-            <textarea name="description" id="description" cols="30" rows="10" placeholder="Je veux ..."></textarea>
+            <input type="text" name="description" id="description" placeholder="Je souhaite avoir ...">
           </div>
+        </div>
+        <div class="fullwidth privacy">
+          <input type="checkbox" name="privacy" id="privacy">
+          <label for="privacy">En envoyant ce formulaire, je confirme que j'ai lu et que j'accepte la politique de
+            confidentialité.</label>
         </div>
         <button type="submit">Envoyer</button>
       </form>
