@@ -29,11 +29,13 @@
   <main id="main">
     <div class="top">
       <h2>Commander vos projets !</h2>
-      <p>Bienvenue sur notre page de commande ! Nous sommes ravis que vous ayez choisi <span class="bold_words">9devs</span> pour
+      <p>Bienvenue sur notre page de commande ! Nous sommes ravis que vous ayez choisi <span
+          class="bold_words">9devs</span> pour
         vos besoins de conception de site web, d'affiches, de logo, de montage vidéo ou d'application mobile. <br>Le
-        processus de commande est simple et rapide. <br>Il vous suffit de remplir le formulaire ci-dessous avec les détails
+        processus de commande est simple et rapide. <br>Il vous suffit de remplir le formulaire ci-dessous avec les
+        détails
         de votre projet, et notre équipe talentueuse se mettra immédiatement au travail pour donner vie à vos idées.
-       </p>
+      </p>
     </div>
     <div class="form">
       <img src="../assets/logo/commande.svg" alt="">
@@ -42,18 +44,28 @@
 
         <h2>Votre Projet Commence ici !</h2>
         <div class="champs">
-          <label for="company">Compagnie</label>
-          <input type="text" name="company" id="company" placeholder="Ma Companie">
-          <label for="name">Nom</label>
-          <input type="text" name="name" id="name" placeholder="Nom" required>
-          <label for="tel">Téléphone</label>
-          <input type="tel" name="tel" id="tel" placeholder="+225 00000000" required>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="exemple@site.com" required>
-          <label for="description">Description du Projet</label>
-          <textarea name="description" id="description" cols="30" rows="10" placeholder="Je veux ..."></textarea>
-          <button type="submit"></button>
+          <div class="half">
+            <label for="company">Compagnie</label>
+            <input type="text" name="company" id="company" placeholder="Ma Companie">
+          </div>
+          <div class="half"><label for="name">Nom</label>
+            <input type="text" name="name" id="name" placeholder="Nom" required>
+          </div>
+          <div class="half">
+            <label for="tel">Téléphone</label>
+            <input type="tel" name="tel" id="tel" placeholder="+225 00000000" required>
+          </div>
+
+          <div class="half">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="exemple@site.com" required>
+          </div>
+          <div class="fullwidth">
+            <label for="description">Description du Projet</label>
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Je veux ..."></textarea>
+          </div>
         </div>
+        <button type="submit">Envoyer</button>
       </form>
     </div>
     <div class="informations">
