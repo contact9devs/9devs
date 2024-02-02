@@ -73,8 +73,8 @@ form .champs>div {
   margin-bottom: 1.7em;
 }
 
-.champs div label {
-  margin-bottom: 2px;
+.champs div label, form>h2 {
+  margin-bottom: 10px;
 }
 
 form label,
@@ -85,11 +85,20 @@ form h2 {
 
 form input {
   width: 85%;
-  padding: 1% 2% 1% 3%;
+  padding: 3% 2% 3% 6%;
+  border: none;
   border-radius: 8px;
-  font-family: 'Poppins';
-  border: 0.1em #9187cf9a solid;
+  box-shadow: 0px 0px 4px 1px #9187cf9a;
 
+}
+
+form textarea {
+  resize: none;
+  text-wrap: wrap;
+  padding: 3% 2% 3% 6%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 1px #9187cf9a;
 }
 
 form .champs .half {
@@ -117,9 +126,11 @@ button {
   height: 100px;
 
 }
-input[name="description"]{
+
+input[name="description"] {
   height: 32px;
 }
+
 .form form .privacy {
   font-size: small;
 }
