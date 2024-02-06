@@ -1,0 +1,123 @@
+/* Tablettes  */
+@media screen and (max-width: 768px) {}
+
+/* telephones 425px */
+@media screen and (max-width: 425px) {
+  #nav {
+    justify-content: space-between;
+    padding: 0 3rem;
+    height: 55px ;
+  }
+
+  .logo {
+    width: 35%;
+  }
+
+  #nav .bouton_contact,
+  .liste_onglets li {
+    display: none;
+  }
+
+  .liste_onglets {
+    width: 5%;
+  }
+
+  .liste_onglets li {
+    position: absolute;
+  }
+
+  .liste_onglets::after {
+    content: url('../assets/logo/menu-svgrepo-com.svg');
+    vertical-align: middle;
+    position: relative;
+  }
+
+  #footer {
+    font-size: 0.6rem;
+  }
+
+  .top_footer {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  #footer .join a {
+    font-size: 0.5rem;
+  }
+
+  .big_footer {
+    height: max-content;
+  }
+  .big_footer > div{
+    height: 100%;
+  }
+
+  .footer_part1 {
+    width: 30%;
+  }
+  .footer_part1 p{
+    line-height: 1.2rem;
+  }
+
+  .footer_part2 {
+    width: auto;
+    margin-left: 2%;
+  }
+
+  .footer_part3 {
+    width: 35%;
+  }
+
+  .tel::before,
+  .email::before,
+  .location::before {
+    display: none;
+  }
+
+  .footer_part4 {
+    margin-left: 0;
+    width: 10%;
+  }
+
+  .footer_part4 div {
+    top: 10%;
+  }
+
+  .footer_part4 div img {
+    width: 50px
+  }
+}
+
+/* Mobiles  375px */
+@media screen and (max-width: 375px) {
+  #nav{
+    height: 45px;
+  }
+  .top_footer {
+    font-size: 0.6rem;   
+  }
+  .footer_part4 div {
+    right: 0;
+  }
+}
+
+/* Mobiles  320px */
+@media screen and (max-width: 320px) {
+
+  .big_footer{
+    flex-direction: column;
+  }
+  .big_footer>div{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 3%;
+  }
+  .footer_part1 .logo{
+    
+  }
+  .footer_part4, .footer_part4 div{
+    position: static;
+  }
+  
+}
