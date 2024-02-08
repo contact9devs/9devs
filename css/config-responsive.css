@@ -1,12 +1,24 @@
 /* Tablettes  */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 1020px) {
+  .footer_part3 div {
+    height: 86%;
+  }
+}
+
+@media screen and (max-width:835px) {
+  .footer_part4 {
+    width: 25%;
+    margin-left: 6%;
+  }
+}
+
 
 /* telephones 425px */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 534px) {
   #nav {
     justify-content: space-between;
     padding: 0 3rem;
-    height: 55px ;
+    height: 55px;
   }
 
   .logo {
@@ -48,14 +60,16 @@
   .big_footer {
     height: max-content;
   }
-  .big_footer > div{
+
+  .big_footer>div {
     height: 100%;
   }
 
   .footer_part1 {
     width: 30%;
   }
-  .footer_part1 p{
+
+  .footer_part1 p {
     line-height: 1.2rem;
   }
 
@@ -90,34 +104,57 @@
 
 /* Mobiles  375px */
 @media screen and (max-width: 375px) {
-  #nav{
+  #nav {
     height: 45px;
+    padding: 0 1.1rem;
   }
+
   .top_footer {
-    font-size: 0.6rem;   
+    font-size: 0.6rem;
   }
+
   .footer_part4 div {
     right: 0;
   }
 }
 
 /* Mobiles  320px */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 332px) {
 
-  .big_footer{
+
+  .top_footer {
+    font-size: 0.5rem;
+    border-radius: 8px;
+  }
+
+  .join img {
+    width: 75%;
+    height: 25%;
+  }
+
+  #footer .join a {
+    font-size: 0.45rem;
+  }
+
+  .footer_part1 .logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .big_footer {
     flex-direction: column;
   }
-  .big_footer>div{
+
+  .big_footer>div {
     width: 100%;
     text-align: center;
     align-items: center;
     margin-bottom: 3%;
   }
-  .footer_part1 .logo{
-    
-  }
-  .footer_part4, .footer_part4 div{
+
+  .footer_part4,
+  .footer_part4 div {
     position: static;
   }
-  
+
 }
